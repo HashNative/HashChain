@@ -1,20 +1,15 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login extends Admin_Controller 
+class Login extends Admin_Controller
 {
 
 	public function __construct()
 	{
 		parent::__construct();
-
 	}
 
-	/* 
-		Check if the login form is submitted, and validates the user credential
-		If not submitted it redirects to the login page
-	*/
 	public function userlogin()
 	{
 		$this->load->view('templates/header');
@@ -22,18 +17,17 @@ class Login extends Admin_Controller
 		$this->load->view('templates/footer');
 	}
 
-    public function adminlogin()
+	public function adminlogin()
 	{
 		$this->load->view('templates/header');
 		$this->load->view('sections/admin/login/login');
 		$this->load->view('templates/footer');
-    }
-    
-    public function superadminlogin()
+	}
+
+	public function superadminlogin()
 	{
 		$this->load->view('templates/header');
 		$this->load->view('sections/superadmin/login/login');
 		$this->load->view('templates/footer');
-    }
-    
+	}
 }

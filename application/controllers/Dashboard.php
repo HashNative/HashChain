@@ -11,17 +11,14 @@ class Dashboard extends Admin_Controller
 
 		
 	}
-
-	/* 
-		Check if the login form is submitted, and validates the user credential
-		If not submitted it redirects to the login page
-    */
         
     public function admindashboard()
 	{
-		$this->load->view('templates/header');
+		$this->load->view('sections/admin/templates/header');
+		$this->load->view('sections/admin/templates/side_navbar');
+		$this->load->view('sections/admin/templates/top_navbar');
         $this->load->view('sections/admin/dashboard/admin_dashboard');
-		$this->load->view('templates/footer');
+		$this->load->view('sections/admin/templates/footer');
 	}
     
     public function superadmindashboard()

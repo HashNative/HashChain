@@ -53,7 +53,6 @@
 <!-- Input Mask-->
 <script src="<?php echo base_url('assets/js/plugins/jasny/jasny-bootstrap.min.js'); ?>"></script>
 
-
 <!-- NouSlider -->
 <script src="<?php echo base_url('assets/js/plugins/nouslider/jquery.nouislider.min.js'); ?>"></script>
 
@@ -219,6 +218,7 @@
 
 <!-- from form_advanced.html -->
 <script>
+    
     $(document).ready(function() {
 
         $('.tagsinput').tagsinput({
