@@ -1,18 +1,17 @@
 <?php 
 
-// class Model_view_main_stock extends CI_Model
-// {
-// 	public function __construct()
-// 	{
-// 		parent::__construct();
-//     }
+class Model_view_main_stock extends CI_Model
+{
+	public function __construct()
+	{
+        $this->load->database();
+		parent::__construct();
+    }
     
-//     function viewMainStock(){
-//         $this->db->select("Barcode,Name,Type,Quantity,Unit,Unit Price,Total"); 
-//         $this->db->from('viewmainstock');
-//         $query = $this->db->get();
-//         return $query->result();
-//        }
-//     }
+    public function viewMainStock($slug = FALSE){
+            $query = $this->db->(' SELECT * FROM viewmainstock');
+            return $query->result_array();
+       }
+}
 
 ?>
