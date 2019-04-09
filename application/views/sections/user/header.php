@@ -62,10 +62,11 @@
     <link href="<?php echo base_url('assets/css/animate.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css');?>" rel="stylesheet">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </head>
 
-<body class="gray-bg">
-
+<body>
 
 <div id="wrapper">
     <nav class="navbar-default navbar-static-side" role="navigation">
@@ -90,9 +91,11 @@
                         User
                     </div>
                 </li>
-                <li>
-                    <a href="<?php echo base_url('Dashboard/userdashboard'); ?>">
-                        <i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span></a>
+                <li class="active">
+                    <li>
+                        <a href="<?php echo base_url('Dashboard/userdashboard'); ?>">
+                            <i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span></a>
+                    </li>
                 </li>
                 <li>
                     <a href="<?php echo base_url('transfer/transfer'); ?>">

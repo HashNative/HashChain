@@ -8,8 +8,7 @@ class Dashboard extends Admin_Controller
 	public function __construct()
 	{
 		parent::__construct();
-
-		
+	
 	}
 
 	/* 
@@ -33,7 +32,6 @@ class Dashboard extends Admin_Controller
     
     public function userdashboard()
 	{
-		$this->load->view('templates/header');
 		$this->load->view('sections/user/header');
         $this->load->view('sections/user/dashboard/user_dashboard');
 		$this->load->view('sections/user/footer');

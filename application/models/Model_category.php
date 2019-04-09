@@ -19,7 +19,7 @@ class Model_category extends CI_Model
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
-
+	
 	public function create($data = array())
 	{
 		if($data) {

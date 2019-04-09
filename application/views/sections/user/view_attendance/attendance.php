@@ -44,6 +44,7 @@
                                             <th>Start Time</th>
                                             <th>End Time</th>
                                             <th>Net Hours</th>
+                                            <th>Options</th>
                                         </tr>
                                     </thead>
                                     <tbody>

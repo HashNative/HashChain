@@ -91,23 +91,19 @@
                             </div>
                             <div class="ibox-content">
                                 <form>
-                                    <p><u>Mark your attendance (Compulsory Process)</u></p>
+                                    <p><u>Mark attendance (Compulsory Process)</u></p>
                                     <div class="form-group row">
                                         <label class="col-lg-3 col-form-label">Starting Time :</label>
 
                                         <div class="col-lg-8">
-                                            <?php
-                                                echo "" . date("h:i:sa");
-                                            ?>
+                                            <input type="time" name="start_time">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-lg-3 col-form-label">Ending Time : </label>
 
                                         <div class="col-lg-8">
-                                            <?php
-                                                echo "" . date("h:i:sa");
-                                            ?>
+                                            <input type="time" name="end_time">
                                         </div>
                                     </div>
                                     <div class="form-group row">

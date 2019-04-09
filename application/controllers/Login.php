@@ -15,6 +15,7 @@ class Login extends Admin_Controller
 		Check if the login form is submitted, and validates the user credential
 		If not submitted it redirects to the login page
 	*/
+	
 	public function userlogin()
 	{
 		$this->load->view('templates/header');
