@@ -1,6 +1,6 @@
 <?php 
 
-class Model_view_final_goods extends CI_Model
+class Model_final_goods extends CI_Model
 {
 	public function __construct()
 	{
@@ -9,7 +9,7 @@ class Model_view_final_goods extends CI_Model
     }
     
     public function viewFinalGood(){
-            $query = $this->db->query("SELECT * FROM viewfinalgood");
+            $query = $this->db->query("SELECT * FROM final_good");
             return $query->result_array();
        }
 }

@@ -101,10 +101,10 @@
                     <a href="<?php echo base_url('transfer/transfer'); ?>">
                         <i class="fa fa-paper-plane"></i> <span class="nav-label">Transfer</span></a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="<?php echo base_url('goods/finished_good'); ?>">
                         <i class="fa fa-truck"></i> <span class="nav-label">Enter Finished Goods</span></a>
-                </li>
+                </li> -->
                 <li>
                     <a href="<?php echo base_url('barcode/barcode_print'); ?>">
                         <i class="fa fa-barcode"></i> 
@@ -120,7 +120,7 @@
                         <i class="fa fa-home"></i> <span class="nav-label">View Main Stock</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('goods/view_final_good'); ?>">
+                    <a href="<?php echo base_url('goods/final_good'); ?>">
                         <i class="fa fa-shopping-cart"></i> <span class="nav-label">View Final Goods</span></a>
                 </li>
             </ul>

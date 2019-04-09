@@ -91,9 +91,7 @@
                                                         <span class="input-group-addon">Rs.</span>
                                                     </div>
                                                     <input type="number" class="form-control" name="cost" value="0">
-                                                        <div class="input-group-append">
-                                                            <span class="input-group-addon">/=</span>
-                                                        </div> 
+                                                        
                                                 </div>
                                             </div>
                                         
@@ -138,7 +136,7 @@
                                                 
                                                 <td>
 
-                                                    <a href='<?php echo base_url(); ?>transfer/editTransfer/<?php echo $transferData['id']; ?>'  
+                                                    <a href='<?php echo base_url(); ?>transfer/updateTransfer/<?php echo $transferData['id']; ?>'  
                                                     class='btn btn-primary btn-md' type='submit'>
                                                     Update</a>
                                                     

@@ -58,11 +58,11 @@ class goods extends Admin_Controller
 			}					
 		}
 
-	public function view_final_good()
+	public function final_good()
 		{
 
-			$this->load->model("Model_view_final_goods");
-			$data['final_good'] = $this ->Model_view_final_goods->viewFinalGood();
+			$this->load->model("Model_final_goods");
+			$data['final_good'] = $this ->Model_final_goods->viewFinalGood();
 			
 			$this->load->view('sections/user/header');
 			$this->load->view('sections/user/view_final_good/view_final_good', $data);

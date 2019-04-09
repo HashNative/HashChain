@@ -1,6 +1,6 @@
 <?php 
 
-class Model_view_main_stock extends CI_Model
+class Model_main_stock extends CI_Model
 {
 	public function __construct()
 	{
@@ -9,7 +9,7 @@ class Model_view_main_stock extends CI_Model
         }
     
         public function viewMainStock(){
-            $query = $this->db->query("SELECT * FROM viewmainstock");
+            $query = $this->db->query("SELECT * FROM main_stock_material");
             return $query->result_array();
         }
 }

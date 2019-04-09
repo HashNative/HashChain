@@ -26,10 +26,10 @@
                                     <thead>
                                         <tr>
                                             <th>Barcode</th>
+                                            <th>Purchase Order No</th>
                                             <th>Name</th>
                                             <th>Type</th>
                                             <th>Quantity</th>
-                                            <th>Unit</th>
                                             <th>Unit Price</th>
                                             <th>Total</th>
                                             <th>Options</th>
@@ -42,10 +42,10 @@
                                                 echo"
                                                     <tr>
                                                         <td> {$mainstock['Barcode']}</td>
+                                                        <td> {$mainstock['Purchase_order_no']}</td>
                                                         <td> {$mainstock['Name']}</td>
                                                         <td> {$mainstock['Type']}</td>
                                                         <td> {$mainstock['Quantity']}</td>
-                                                        <td> {$mainstock['Unit']}</td>
                                                         <td> {$mainstock['Unit Price']}</td>
                                                         <td> {$mainstock['Total']}</td>
                                                         <td>

@@ -18,8 +18,8 @@ class stock extends Admin_Controller
         
     public function view_main_stock()
         {
-            $this->load->model("Model_view_main_stock");
-            $data['main_stock'] = $this ->Model_view_main_stock->viewMainStock();
+            $this->load->model("Model_main_stock");
+            $data['main_stock'] = $this ->Model_main_stock->viewMainStock();
 
             $this->load->view('sections/user/header');
             $this->load->view('sections/user/view_main_stock/main_stock', $data);

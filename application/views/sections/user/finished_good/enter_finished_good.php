@@ -37,9 +37,8 @@
                                             <div class="col-lg-10">
                                                 <select class="form-control m-b" name="stockTarget">
                                                     <option>Company</option>
-                                                    <option>Agent</option>
-                                                    <option>Warehouse</option>
-                                                    <option>Retailers</option>
+                                                    <option>Cash</option>
+                                                    
                                                 </select>
                                             </div>
                                     </div>
@@ -82,9 +81,7 @@
                                                 <span class="input-group-addon">Rs.</span>
                                             </div>
                                             <input type="number" name="unitPrice" class="form-control" value="0">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-addon">/=</span>
-                                                </div>
+                                                
                                         </div>
                                         </div>
                                     </div>
@@ -97,9 +94,7 @@
                                                 <span class="input-group-addon">Rs.</span>
                                             </div>
                                             <input type="number" name="total" class="form-control" value="0" >
-                                                <div class="input-group-append">
-                                                    <span class="input-group-addon">/=</span>
-                                                </div>
+                                
                                         </div>
                                         </div>
                                     </div>
