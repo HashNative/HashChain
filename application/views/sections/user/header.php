@@ -64,6 +64,23 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <script src="alert/dist/alertify.min.js"></script>
+	<link rel="stylesheet" href="alert/dist/alertify.core.css" />
+	<link rel="stylesheet" href="alert/dist/alertify.default.css" id="toggleCSS" />
+
+        <style>
+        .divclass {
+        background: #415665;
+        height: 50px;
+        width:200px;
+        border-radius: 15px;
+        padding:20px;
+        font-size:22px;
+        color:#fff;   
+        }
+        </style> 
+
+
 </head>
 
 <body>
@@ -84,7 +101,8 @@
                             <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
                             <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
                             <li class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="<?php echo base_url('Login/userlogin');?>">Logout</a></li>
+                            <li><a class="dropdown-item" href="<?php echo base_url('Userlogin/userlogin');?>">Logout</a></li>
+                            <!-- <li><a class="dropdown-item" href="<?php echo base_url('Login/userlogin');?>">Logout</a></li> -->
                         </ul>
                     </div>
                     <div class="logo-element">
@@ -98,30 +116,30 @@
                     </li>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('transfer/transfer'); ?>">
+                    <a href="<?php echo base_url('Transfer/transfer'); ?>">
                         <i class="fa fa-paper-plane"></i> <span class="nav-label">Transfer</span></a>
                 </li>
                 <!-- <li>
-                    <a href="<?php echo base_url('goods/finished_good'); ?>">
+                    <a href="<?php echo base_url('Goods/finished_good'); ?>">
                         <i class="fa fa-truck"></i> <span class="nav-label">Enter Finished Goods</span></a>
                 </li> -->
                 <li>
-                    <a href="<?php echo base_url('barcode/barcode_print'); ?>">
+                    <a href="<?php echo base_url('Barcode/barcode_print'); ?>">
                         <i class="fa fa-barcode"></i> 
                         <span class="nav-label">
                                 Print Barcode</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('attendance/view_attendance'); ?>">
-                        <i class="fa fa-users"></i> <span class="nav-label">View Attendance</span></a>
+                    <a href="<?php echo base_url('Attendance/view_attendance'); ?>">
+                        <i class="fa fa-users"></i><span class="nav-label">Attendance</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('stock/view_main_stock'); ?>">
+                    <a href="<?php echo base_url('Stock/view_main_stock'); ?>">
                         <i class="fa fa-home"></i> <span class="nav-label">View Main Stock</span></a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('goods/final_good'); ?>">
-                        <i class="fa fa-shopping-cart"></i> <span class="nav-label">View Final Goods</span></a>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart"></i> <span class="nav-label">Final Goods</span></a>
                 </li>
             </ul>
         </div>
@@ -240,7 +258,8 @@
 
 
                     <li>
-                        <a href="<?php echo base_url('Login/userlogin');?>">
+                        <!-- <a href="<?php echo base_url('Login/userlogin');?>"> -->
+                        <a href="<?php echo base_url('Userlogin/userlogin');?>">
                             <i class="fa fa-sign-out"></i> Log out
                         </a>
                     </li>

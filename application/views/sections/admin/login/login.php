@@ -3,7 +3,7 @@
         <div>
             <div>
 
-                <h1 class="logo-name">ADMIN</h1>
+                <h1 class="logo-name">HC</h1>
 
             </div>
             <h3>Welcome to Admin Login Page</h3>

@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class barcode extends Admin_Controller 
+class Barcode extends Admin_Controller 
 {
 
 	public function __construct()

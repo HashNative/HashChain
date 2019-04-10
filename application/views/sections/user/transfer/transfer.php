@@ -24,16 +24,19 @@
 
                         <div class="ibox-content">
 
-                            <div class="col text-right">
-                                <?php 
-                                     echo "Date : " . date("Y-m-d") . "<br>"; 
-                                ?>
-                            </div>
-                
-                            <br>
-
                             <!-- <form method="POST"> -->
-                           <?php echo form_open('transfer/createTransfer'); ?>
+                           <?php echo form_open('Transfer/createTransfer'); ?>
+
+                                    <div class="form-group row" id="data_1">
+                                        <label class="col-sm-2 col-form-label">Date</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <input type="text" class="form-control" value="<?php echo date("d/m/Y"); ?>" name="date">
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Barcode :</label> 
                                             <div class="col-sm-10">
@@ -100,7 +103,7 @@
                                     <div class="form-group row">
 
                                         <div class="col text-center">
-                                            <button class="btn btn-success btn-sm" type="submit" name="transfer"><strong>Transfer</strong></button>
+                                            <button class="btn btn-success btn-sm" type="submit" name="transfer" ><strong>Transfer</strong></button>
                                             <button class="btn btn-sm btn-danger " type="reset" name="clear"><strong>Clear</strong></button>
                                         </div>
                                         
@@ -115,6 +118,7 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
+                                            <th>Date</th>
                                             <th>Barcode</th>
                                             <th>Unit Cost</th>
                                             <th>Transfer to section</th>
@@ -128,6 +132,7 @@
                                         <?php foreach ($transfer_data as $transferData){ ?>
                                                
                                             <tr>
+                                                <td><?php echo $transferData['Date']; ?></td>
                                                 <td><?php echo $transferData['Barcode']; ?></td>
                                                 <td><?php echo $transferData['Unit_Cost']; ?></td>
                                                 <td><?php echo $transferData['Transfer_to_section']; ?></td>
@@ -136,12 +141,12 @@
                                                 
                                                 <td>
 
-                                                    <a href='<?php echo base_url(); ?>transfer/updateTransfer/<?php echo $transferData['id']; ?>'  
-                                                    class='btn btn-primary btn-md' type='submit'>
+                                                    <a href='<?php echo base_url(); ?>Transfer/editTransfer/<?php echo $transferData['id']; ?>'  
+                                                    class='btn btn-primary btn-md' type='submit'  onClick="return doconfirm1();">
                                                     Update</a>
                                                     
-                                                    <a href='<?php echo base_url(); ?>transfer/deleteTransfer/<?php echo $transferData['id']; ?>'  
-                                                    class='btn btn-danger btn-md' type='submit'>
+                                                    <a href='<?php echo base_url(); ?>Transfer/deleteTransfer/<?php echo $transferData['id']; ?>'  
+                                                    class='btn btn-danger btn-md' type='submit'  onClick="return doconfirm();">
                                                     Delete</a>
                                                 </td>
                                             </tr>
@@ -151,6 +156,7 @@
                                 </table>         
                             </div>
                         </div>
+                    
                     </div>
                 </div>
         </div>
@@ -159,22 +165,25 @@
 
 </div>
 
-<!-- <script>
-    $(document).ready(function(){
-        $('.delete_data').click(function(){
-            var id = $(this).attr("id");
-                if(confirm("Are you sure you want to delete this record ?"))
-                {
-                    window.location="<?php echo base_url(); ?>transfer/deleteTransfer/<?php echo $transferData['id']; ?>";
-                }
-                else
-                {
-                    return false;
-                }
-        });
-    });
-</script> -->
 
+<!-- dialog box confirmation for delete record -->
+<script>
+    function doconfirm()
+    {
+        job=confirm("Are you sure to delete the record permanently?");
+        if(job!=true)
+        {
+            return false;
+        }
+    }
 
-
+    function doconfirm1()
+    {
+        job=confirm("Do you want to update the record?");
+        if(job!=true)
+        {
+            return false;
+        }
+    }
+</script>
     

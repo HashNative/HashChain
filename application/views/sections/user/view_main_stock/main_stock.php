@@ -38,24 +38,26 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                            foreach ($main_stock as $mainstock){
-                                                echo"
+                                            foreach ($main_stock as $mainstock){ ?>
+                                                
                                                     <tr>
-                                                        <td> {$mainstock['Barcode']}</td>
-                                                        <td> {$mainstock['Purchase_order_no']}</td>
-                                                        <td> {$mainstock['Name']}</td>
-                                                        <td> {$mainstock['Type']}</td>
-                                                        <td> {$mainstock['Quantity']}</td>
-                                                        <td> {$mainstock['Unit Price']}</td>
-                                                        <td> {$mainstock['Total']}</td>
+                                                        <td><?php echo $mainstock['Barcode']; ?></td>
+                                                        <td><?php echo $mainstock['Purchase_order_no']; ?></td>
+                                                        <td><?php echo $mainstock['Name']; ?></td>
+                                                        <td><?php echo $mainstock['Type']; ?></td>
+                                                        <td><?php echo $mainstock['Quantity']; ?></td>
+                                                        <td><?php echo $mainstock['Unit Price']; ?></td>
+                                                        <td><?php echo $mainstock['Total']; ?></td>
                                                         <td>
                                                             <button class='btn btn-info btn-md' type='button' class='text-center'>Print</button>
                                                             <button class='btn btn-primary btn-md' type='submit' class='text-center'>Update</button>
-                                                            <button class='btn btn-danger btn-md' type='reset'>Delete</button>
+                                                            
+                                                            <a href='<?php echo base_url(); ?>Stock/deleteMainStock/<?php echo $mainstock['id']; ?>'  
+                                                            class='btn btn-danger btn-md' type='submit'  onClick="return doconfirm();">
+                                                            Delete</a>
                                                         </td>
-                                                    </tr>";
-                                            }
-                                        ?>
+                                                    </tr>
+                                          <?php  } ?>
                                     </tbody>
                                 </table>         
                             </div>
@@ -69,3 +71,16 @@
  </div>
 
 </div>
+
+
+<!-- dialog box confirmation for delete record -->
+<script>
+    function doconfirm()
+    {
+        job=confirm("Are you sure to delete the record permanently?");
+        if(job!=true)
+        {
+            return false;
+        }
+    }
+</script>

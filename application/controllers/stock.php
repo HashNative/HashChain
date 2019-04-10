@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class stock extends Admin_Controller 
+class Stock extends Admin_Controller 
 {
 
 	public function __construct()
@@ -24,6 +24,15 @@ class stock extends Admin_Controller
             $this->load->view('sections/user/header');
             $this->load->view('sections/user/view_main_stock/main_stock', $data);
             $this->load->view('sections/user/footer');
+        }
+
+        //delete function
+        public function deleteMainStock($id)
+        {
+            $this->load->model('Model_main_stock');
+            $this->Model_main_stock->deleteMainStock($id);
+            redirect(base_url() . "Stock/view_main_stock");
+            $this->view_main_stock();
         }
     
 }

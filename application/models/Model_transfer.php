@@ -5,8 +5,6 @@ class Model_transfer extends CI_Model
 	public function __construct()
 	{
                 $this->load->database();
-                // $this->load->library('form_validation');
-		        // parent::__construct();
         }
     
         public function viewTransfer($id=FALSE)
@@ -25,6 +23,7 @@ class Model_transfer extends CI_Model
         {
                 $data = array(
 
+                        'Date' => $this->input->post('date'),
                         'Barcode' => $this->input->post('Barcode'),
                         'Unit_Cost' => $this->input->post('unitCost'),
                         'Transfer_to_section' => $this->input->post('sections'),
@@ -48,6 +47,7 @@ class Model_transfer extends CI_Model
                 $id = url_title($this->input->post('id'));
 
                 $data = array(
+                        'Date' => $this->input->post('date'),
                         'Barcode' => $this->input->post('Barcode'),
                         'Unit_Cost' => $this->input->post('unitCost'),
                         'Transfer_to_section' => $this->input->post('sections'),

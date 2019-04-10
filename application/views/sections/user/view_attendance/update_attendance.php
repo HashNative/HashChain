@@ -22,7 +22,8 @@
                         <div class="ibox-content">
                             
                             <!-- <form method="POST"> -->
-                            <?php echo form_open('Attendance/addAttendance'); ?>
+                            <?php echo form_open('Attendance/updateAttendance'); ?>
+                            <input type="hidden" name="id" value="<?php echo $attendances['id']; ?>">
 
                                 <div class="form-group row" id="data_1">
                                     <label class="col-sm-2 col-form-label">Date</label>
@@ -37,7 +38,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Username :</label> 
                                         <div class="col-sm-10">
-                                            <input type="Text" class="form-control" name="name">
+                                            <input type="Text" class="form-control" name="name" value="<?php echo $attendances['Name']; ?>">
                                             <span class="text-danger"><?php echo form_error("name"); ?></span> 
                                         </div>      
                                     
@@ -46,7 +47,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Starting Time :</label> 
                                         <div class="col-sm-10">
-                                            <input type="time" class="form-control" name="start_time">
+                                            <input type="time" class="form-control" name="start_time" value="<?php echo $attendances['Start_time']; ?>">
                                             <span class="text-danger"><?php echo form_error("start_time"); ?></span>
                                         </div>
                                 </div>
@@ -55,16 +56,17 @@
                                     <label class="col-sm-2 col-form-label">Ending Time :</label>
                                         <div class="col-sm-10">
                                             
-                                            <input type="time" class="form-control" name="end_time">
+                                            <input type="time" class="form-control" name="end_time" value="<?php echo $attendances['End_time']; ?>">
                                             <span class="text-danger"><?php echo form_error("end_time"); ?></span> 
                                             
                                         </div>
+                                    
                                 </div>
 
                                 <div class="form-group row">
                                     <div class="col text-center">
-                                        <button class="btn btn-success btn-sm" type="submit" name="record" ><strong>Record Attendance</strong></button>
-                                        <button class="btn btn-sm btn-danger " type="reset" name="clear"><strong>Clear</strong></button>
+                                        <button class="btn btn-success btn-sm" type="submit" name="record" ><strong>Update</strong></button>
+                                        
                                     </div>
                                     
                                 </div>
@@ -83,7 +85,7 @@
                                             <th>Username</th>
                                             <th>Starting Time</th>
                                             <th>Ending Time</th>
-                                            <th>Options</th>
+                                           
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -94,16 +96,7 @@
                                                 <td><?php echo $attendances['Name']; ?></td>
                                                 <td><?php echo $attendances['Start_time']; ?></td>
                                                 <td><?php echo $attendances['End_time']; ?></td>
-                                                <td>
-
-                                                    <a href='<?php echo base_url(); ?>Attendance/editAttendance/<?php echo $attendances['id']; ?>'  
-                                                    class='btn btn-primary btn-md' type='submit'  onClick="return doconfirm1();">
-                                                    Update</a>
-                                                    
-                                                    <a href='<?php echo base_url(); ?>Attendance/deleteAttendance/<?php echo $attendances['id']; ?>'  
-                                                    class='btn btn-danger btn-md' type='submit'  onClick="return doconfirm();">
-                                                    Delete</a>
-                                                </td>
+                                               
                                             </tr>
 
                                         <?php } ?>
@@ -120,24 +113,3 @@
     </div>
 
 </div>
-
-<!-- dialog box confirmation for delete record -->
-<script>
-    function doconfirm()
-    {
-        job=confirm("Are you sure to delete the record permanently?");
-        if(job!=true)
-        {
-            return false;
-        }
-    }
-
-    function doconfirm1()
-    {
-        job=confirm("Do you want to update the record?");
-        if(job!=true)
-        {
-            return false;
-        }
-    }
-</script>

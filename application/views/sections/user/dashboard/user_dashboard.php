@@ -90,13 +90,34 @@
                                 <h5>Attendance Marking</h5>
                             </div>
                             <div class="ibox-content">
+                               
                                 <form>
                                     <p><u>Mark attendance (Compulsory Process)</u></p>
+
+                                    <div class="form-group row" id="data_1">
+                                        <label class="col-sm-2 col-form-label">Date</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <input type="text" class="form-control" value="<?php echo date("d/m/Y"); ?>" name="date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label">Username :</label>
+
+                                        <div class="col-lg-8">
+                                            <input type="text" name="name">
+                                            <span class="text-danger"><?php echo form_error("name"); ?></span> 
+                                        </div>
+                                    </div>
                                     <div class="form-group row">
                                         <label class="col-lg-3 col-form-label">Starting Time :</label>
 
                                         <div class="col-lg-8">
                                             <input type="time" name="start_time">
+                                            <span class="text-danger"><?php echo form_error("start_time"); ?></span> 
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -104,11 +125,16 @@
 
                                         <div class="col-lg-8">
                                             <input type="time" name="end_time">
+                                            <span class="text-danger"><?php echo form_error("end_time"); ?></span> 
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-offset-2 col-lg-10">
                                             <div class="col text-center">
+
+                                                  <!-- <button class="btn btn-sm btn-info" type="submit">
+                                                    Record Attendance</button> -->
+
                                                 <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#myModal2">
                                                     Record Attendance</button>
                                                     <div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
