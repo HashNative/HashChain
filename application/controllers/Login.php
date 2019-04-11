@@ -19,9 +19,13 @@ class Login extends Admin_Controller
 
 	public function adminlogin()
 	{
-		$this->load->view('templates/header');
+		$data['pageTitle'] = "Login Page";
+
+		$this->load->view('templates/header', $data);
 		$this->load->view('sections/admin/login/login');
 		$this->load->view('templates/footer');
+
+
 	}
 
 	public function superadminlogin()

@@ -1,103 +1,76 @@
-</div>
-</div>
+<!-- </div>
+</div> -->
+
 
 <!-- Mainly scripts -->
-<script src="<?php echo base_url('assets/js/jquery-3.1.1.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/popper.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/bootstrap.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/metisMenu/jquery.metisMenu.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/slimscroll/jquery.slimscroll.min.js'); ?>"></script>
-
 <!-- Flot -->
-<script src="<?php echo base_url('assets/js/plugins/flot/jquery.flot.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/flot/jquery.flot.tooltip.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/flot/jquery.flot.spline.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/flot/jquery.flot.resize.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/flot/jquery.flot.pie.js'); ?>"></script>
-
 <!-- Peity -->
-<script src="<?php echo base_url('assets/js/plugins/peity/jquery.peity.min.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/demo/peity-demo.js'); ?>"></script>
-
 <!-- Custom and plugin javascript -->
-<script src="<?php echo base_url('assets/js/inspinia.js'); ?>"></script>
-<script src="<?php echo base_url('assets/js/plugins/pace/pace.min.js'); ?>"></script>
-
 <!-- jQuery UI -->
-<script src="<?php echo base_url('assets/js/plugins/jquery-ui/jquery-ui.min.js'); ?>"></script>
-
 <!-- GITTER -->
-<script src="<?php echo base_url('assets/js/plugins/gritter/jquery.gritter.min.js'); ?>"></script>
-
 <!-- Sparkline -->
-<script src="<?php echo base_url('assets/js/plugins/sparkline/jquery.sparkline.min.js'); ?>"></script>
-
 <!-- Sparkline demo data  -->
-<script src="<?php echo base_url('assets/js/demo/sparkline-demo.js'); ?>"></script>
-
 <!-- ChartJS-->
-<script src="<?php echo base_url('assets/js/plugins/chartJs/Chart.min.js'); ?>"></script>
-
 <!-- Toastr -->
-<script src="<?php echo base_url('assets/js/plugins/toastr/toastr.min.js'); ?>"></script>
-
-<!-- Data picker -->
-<script src="<?php echo base_url('assets/js/plugins/datapicker/bootstrap-datepicker.js'); ?>"></script>
-
 <!-- Chosen -->
-<script src="<?php echo base_url('assets/js/plugins/chosen/chosen.jquery.js'); ?>"></script>
-
 <!-- JSKnob -->
-<script src="<?php echo base_url('assets/js/plugins/jsKnob/jquery.knob.js'); ?>"></script>
-
 <!-- Input Mask-->
-<script src="<?php echo base_url('assets/js/plugins/jasny/jasny-bootstrap.min.js'); ?>"></script>
-
+<!-- Data picker -->
 <!-- NouSlider -->
-<script src="<?php echo base_url('assets/js/plugins/nouslider/jquery.nouislider.min.js'); ?>"></script>
-
 <!-- Switchery -->
-<script src="<?php echo base_url('assets/js/plugins/switchery/switchery.js'); ?>"></script>
-
 <!-- IonRangeSlider -->
-<script src="<?php echo base_url('assets/js/plugins/ionRangeSlider/ion.rangeSlider.min.js'); ?>"></script>
-
 <!-- iCheck -->
-<script src="<?php echo base_url('assets/js/plugins/iCheck/icheck.min.js'); ?>"></script>
-
 <!-- MENU -->
-<script src="<?php echo base_url('assets/js/plugins/metisMenu/jquery.metisMenu.js'); ?>"></script>
-
 <!-- Color picker -->
-<script src="<?php echo base_url('assets/js/plugins/colorpicker/bootstrap-colorpicker.min.js'); ?>"></script>
-
 <!-- Clock picker -->
-<script src="<?php echo base_url('assets/js/plugins/clockpicker/clockpicker.js'); ?>"></script>
-
 <!-- Image cropper -->
-<script src="<?php echo base_url('assets/js/plugins/cropper/cropper.min.js'); ?>"></script>
-
 <!-- Date range use moment.js same as full calendar plugin -->
-<script src="<?php echo base_url('assets/js/plugins/fullcalendar/moment.min.js'); ?>"></script>
-
 <!-- Date range picker -->
-<script src="<?php echo base_url('assets/js/plugins/daterangepicker/daterangepicker.js'); ?>"></script>
-
 <!-- Select2 -->
-<script src="<?php echo base_url('assets/js/plugins/select2/select2.full.min.js'); ?>"></script>
-
 <!-- TouchSpin -->
-<script src="<?php echo base_url('assets/js/plugins/touchspin/jquery.bootstrap-touchspin.min.js'); ?>"></script>
-
 <!-- Tags Input -->
-<script src="<?php echo base_url('assets/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js'); ?>"></script>
-
 <!-- Dual Listbox -->
-<script src="<?php echo base_url('assets/js/plugins/dualListbox/jquery.bootstrap-duallistbox.js'); ?>"></script>
 
-<!-- from index.html -->
+
+
+
+
+<!-- index -->
+<script src="<?php echo base_url(); ?>assets/js/jquery-3.1.1.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/popper.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/flot/jquery.flot.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/flot/jquery.flot.spline.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/flot/jquery.flot.resize.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/flot/jquery.flot.pie.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/demo/peity-demo.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/inspinia.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/pace/pace.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/gritter/jquery.gritter.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/demo/sparkline-demo.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/chartJs/Chart.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/toastr/toastr.min.js"></script>
 <script>
     $(document).ready(function() {
+        setTimeout(function() {
+            toastr.options = {
+                closeButton: true,
+                progressBar: true,
+                showMethod: 'slideDown',
+                timeOut: 4000
+            };
+            toastr.success('Responsive Admin Theme', 'Welcome to INSPINIA');
+
+        }, 1300);
+
+
         var data1 = [
             [0, 4],
             [1, 8],
@@ -136,39 +109,40 @@
             [15, 0],
             [16, 0]
         ];
-        $("#flot-dashboard-chart").length &&
-            $.plot($("#flot-dashboard-chart"), [data1, data2], {
-                series: {
-                    lines: {
-                        show: false,
-                        fill: true
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2
+        $("#flot-dashboard-chart").length && $.plot($("#flot-dashboard-chart"), [
+            data1, data2
+        ], {
+            series: {
+                lines: {
+                    show: false,
+                    fill: true
                 },
-                grid: {
-                    hoverable: true,
-                    clickable: true,
-                    tickColor: "#d5d5d5",
-                    borderWidth: 1,
-                    color: "#d5d5d5"
+                splines: {
+                    show: true,
+                    tension: 0.4,
+                    lineWidth: 1,
+                    fill: 0.4
                 },
-                colors: ["#1ab394", "#1C84C6"],
-                xaxis: {},
-                yaxis: {
-                    ticks: 4
+                points: {
+                    radius: 0,
+                    show: true
                 },
-                tooltip: false
-            });
+                shadowSize: 2
+            },
+            grid: {
+                hoverable: true,
+                clickable: true,
+                tickColor: "#d5d5d5",
+                borderWidth: 1,
+                color: '#d5d5d5'
+            },
+            colors: ["#1ab394", "#1C84C6"],
+            xaxis: {},
+            yaxis: {
+                ticks: 4
+            },
+            tooltip: false
+        });
 
         var doughnutData = {
             labels: ["App", "Software", "Laptop"],
@@ -178,6 +152,7 @@
             }]
         };
 
+
         var doughnutOptions = {
             responsive: false,
             legend: {
@@ -185,9 +160,10 @@
             }
         };
 
+
         var ctx4 = document.getElementById("doughnutChart").getContext("2d");
         new Chart(ctx4, {
-            type: "doughnut",
+            type: 'doughnut',
             data: doughnutData,
             options: doughnutOptions
         });
@@ -200,6 +176,7 @@
             }]
         };
 
+
         var doughnutOptions = {
             responsive: false,
             legend: {
@@ -207,18 +184,44 @@
             }
         };
 
+
         var ctx4 = document.getElementById("doughnutChart2").getContext("2d");
         new Chart(ctx4, {
-            type: "doughnut",
+            type: 'doughnut',
             data: doughnutData,
             options: doughnutOptions
         });
+
     });
 </script>
 
-<!-- from form_advanced.html -->
+
+
+
+
+
+
+
+<!-- form-advance -->
+<script src="<?php echo base_url(); ?>assets/js/plugins/chosen/chosen.jquery.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/jsKnob/jquery.knob.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/jasny/jasny-bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/nouslider/jquery.nouislider.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/switchery/switchery.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/ionRangeSlider/ion.rangeSlider.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/iCheck/icheck.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/clockpicker/clockpicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/cropper/cropper.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/fullcalendar/moment.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/select2/select2.full.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/plugins/dualListbox/jquery.bootstrap-duallistbox.js"></script>
 <script>
-    
     $(document).ready(function() {
 
         $('.tagsinput').tagsinput({
@@ -546,6 +549,25 @@
     });
 </script>
 
+
+
+
+
+
+
+
+
+<!-- print as pdf function -->
+<script>
+    function printFunction() {
+        window.print();
+    }
+</script>
+
+<script>
+
+</script>
+
 </body>
 
-</html> 
+</html>

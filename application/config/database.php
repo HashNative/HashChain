@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'localhost', //namslk.ipagemysql.com
+	'username' => 'root', //hashchain
+	'password' => '', //Ha5hcha1n
 	'database' => 'hashchain',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

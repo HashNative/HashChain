@@ -55,7 +55,6 @@
                                     <td>aaaaa</td>
                                     <td>20%</td>
                                     <td>Jul 14, 2013</td>
-                                    <td>aaaaa</td>
                                 </tr>
                             </tbody>
                         </table>

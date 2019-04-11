@@ -1,4 +1,4 @@
-<div class="row  border-bottom white-bg dashboard-header">
+<div class="row border-bottom white-bg dashboard-header">
     <div class="col-md-3">
         <h2>Welcome Amelia</h2>
         <small>You have 42 messages and 6 notifications.</small>
@@ -84,4 +84,4 @@
 </div>
 <div class="footer">
     <div class="float-right"><strong>Copyright</strong> Hashnative Software Engineering &copy; 2014-2018</div>
-</div> 
+</div>

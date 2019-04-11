@@ -1,7 +1,7 @@
 <div class="middle-box text-center loginscreen animated fadeInDown">
     <div>
         <h3>Welcome to Admin Login Page</h3>
-        <form class="m-t" role="form" action="<?php echo base_url(); ?>Dashboard/admindashboard">
+        <form role="form" class="m-t" action="<?php echo base_url(); ?>Dashboard/admindashboard">
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Username" required="">
             </div>
@@ -12,4 +12,4 @@
             <a href="#">Forgot password?</a>
         </form>
     </div>
-</div> 
+</div>
