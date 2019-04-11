@@ -15,6 +15,7 @@ class Transfer extends Admin_Controller
 		{
 				$this->load->model('Model_transfer');
 				$data['transfer_data'] = $this->Model_transfer->viewTransfer();
+				
 
 				$this->load->view('sections/user/header');
 				$this->load->view('sections/user/transfer/transfer',$data);
@@ -33,12 +34,17 @@ class Transfer extends Admin_Controller
 
 				if($this->form_validation->run()==FALSE)
 						{		
+							$this->session->set_flashdata('error', 'Fill all the fields with valid data');
+
 							$this->transfer();
 						}
 				else
 						{
+							$this->session->set_flashdata('success', 'Data transfered successfully');
+
 							$this->load->model('Model_transfer');				
 							$this->Model_transfer->createTransfer();
+							
 							redirect(base_url() . "Transfer/transfer");
 							$this->transfer();
 						}
@@ -48,6 +54,8 @@ class Transfer extends Admin_Controller
 
 	public function deleteTransfer($id)
 	{
+		$this->session->set_flashdata('delete', 'Record deleted successfully');
+
 		$this->load->model('Model_transfer');
 		$this->Model_transfer->deleteTransfer($id);
 		redirect(base_url() . "Transfer/transfer");
@@ -69,6 +77,8 @@ class Transfer extends Admin_Controller
 	//update edited data
 	public function updateTransfer()
 	{
+		$this->session->set_flashdata('update', 'Record updated successfully');
+
 		$this->load->model('Model_transfer');
 		$this->Model_transfer->updateTransfer();
 		redirect(base_url() . "Transfer/transfer");

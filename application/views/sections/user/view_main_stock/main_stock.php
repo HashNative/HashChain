@@ -20,6 +20,14 @@
                         </div>
                         
                         <div class="ibox-content">
+                            
+                            <?php if($_SESSION['delete']) { ?>
+                                <div class="alert alert-danger alert-dismissable">
+                                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                        <?php echo $_SESSION['delete']; ?>
+                                </div>
+                            <?php } ?>
+
                             <br>
                             <div class="table-responsive">
                                 <table class="table table-bordered">
@@ -49,7 +57,7 @@
                                                         <td><?php echo $mainstock['Unit Price']; ?></td>
                                                         <td><?php echo $mainstock['Total']; ?></td>
                                                         <td>
-                                                            <button class='btn btn-info btn-md' type='button' class='text-center'>Print</button>
+                                                            
                                                             <button class='btn btn-primary btn-md' type='submit' class='text-center'>Update</button>
                                                             
                                                             <a href='<?php echo base_url(); ?>Stock/deleteMainStock/<?php echo $mainstock['id']; ?>'  
@@ -59,7 +67,10 @@
                                                     </tr>
                                           <?php  } ?>
                                     </tbody>
-                                </table>         
+                                </table> 
+                                <div class="text-center">
+                                    <button class='btn btn-info btn-md' type='button' class='text-center'>Print</button>
+                                </div>
                             </div>
                     
                         </div>

@@ -23,6 +23,35 @@
                         </div>
 
                         <div class="ibox-content">
+                     
+                        <?php if($_SESSION['error']) { ?>
+                            <div class="alert alert-warning alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['error']; ?>
+                            </div>
+                        <?php } ?>
+
+                        <?php if($_SESSION['success']) { ?>
+                            <div class="alert alert-success alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['success']; ?>
+                            </div>
+                        <?php } ?>
+
+                        <?php if($_SESSION['update']) { ?>
+                            <div class="alert alert-success alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['update']; ?>
+                                </div>
+                        <?php } ?>
+
+                        <?php if($_SESSION['delete']) { ?>
+                            <div class="alert alert-danger alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['delete']; ?>
+                            </div>
+                        <?php } ?>
+                            
 
                             <!-- <form method="POST"> -->
                            <?php echo form_open('Transfer/createTransfer'); ?>
@@ -103,7 +132,7 @@
                                     <div class="form-group row">
 
                                         <div class="col text-center">
-                                            <button class="btn btn-success btn-sm" type="submit" name="transfer" ><strong>Transfer</strong></button>
+                                            <button class="btn btn-success btn-sm" type="submit" name="transfer"><strong>Transfer</strong></button>
                                             <button class="btn btn-sm btn-danger " type="reset" name="clear"><strong>Clear</strong></button>
                                         </div>
                                         
@@ -185,5 +214,12 @@
             return false;
         }
     }
+
+    function alert()
+    {
+        if(form_validation() == FALSE){
+            alert('Submit button pressed');
+        }
+    }
+
 </script>
-    

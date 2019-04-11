@@ -62,25 +62,6 @@
     <link href="<?php echo base_url('assets/css/animate.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css');?>" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-    <script src="alert/dist/alertify.min.js"></script>
-	<link rel="stylesheet" href="alert/dist/alertify.core.css" />
-	<link rel="stylesheet" href="alert/dist/alertify.default.css" id="toggleCSS" />
-
-        <style>
-        .divclass {
-        background: #415665;
-        height: 50px;
-        width:200px;
-        border-radius: 15px;
-        padding:20px;
-        font-size:22px;
-        color:#fff;   
-        }
-        </style> 
-
-
 </head>
 
 <body>

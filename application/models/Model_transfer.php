@@ -5,6 +5,7 @@ class Model_transfer extends CI_Model
 	public function __construct()
 	{
                 $this->load->database();
+                
         }
     
         public function viewTransfer($id=FALSE)
@@ -31,6 +32,7 @@ class Model_transfer extends CI_Model
                         'Cost' => $this->input->post('cost')
                 );
 
+                
                 return $this->db->insert("transfer", $data);
         }
 

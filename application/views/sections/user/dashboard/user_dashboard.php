@@ -83,7 +83,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <!-- <div class="col-lg-6">
                         <div class="ibox ">
                             <div class="ibox-title">
                                 <span class="label label-warning float-right">Timely Attendance</span>
@@ -132,10 +132,10 @@
                                         <div class="col-lg-offset-2 col-lg-10">
                                             <div class="col text-center">
 
-                                                  <!-- <button class="btn btn-sm btn-info" type="submit">
+                                                   <button class="btn btn-sm btn-info" type="submit">
                                                     Record Attendance</button> -->
 
-                                                <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#myModal2">
+                                                <!-- <button class="btn btn-sm btn-info" type="button" data-toggle="modal" data-target="#myModal2">
                                                     Record Attendance</button>
                                                     <div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
                                                         <div class="modal-dialog">
@@ -171,14 +171,14 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
                                 </form>
                         </div>
                         </div>
-                    </div>
+                    <!-- </div> --> 
                 </div>
 
             </div>

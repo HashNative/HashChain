@@ -10,14 +10,14 @@
             
             <!-- <form class="m-t" role="form" id="form" action="<?php echo base_url('Dashboard/userdashboard');?>"> -->
 
-            <?php echo form_open('Login/userlogin'); ?>
+            <?php echo form_open('Userlogin/userlogin'); ?>
                 <div id="pwd-container3">
                     <div class="form-group">
-                        <input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+                        <input type="text" name="username" class="form-control" id="username" placeholder="Username">
                         <span class="text-danger"><?php echo form_error("username"); ?></span>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="pwd" class="form-control example3" id="password3" placeholder="Password" required>
+                        <input type="password" name="pwd" class="form-control example3" id="password3" placeholder="Password">
                         <span class="text-danger"><?php echo form_error("pwd"); ?></span>
                     </div>
                     <div class="form-group">

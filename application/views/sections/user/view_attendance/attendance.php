@@ -21,6 +21,34 @@
                         
                         <div class="ibox-content">
                             
+                        <?php if($_SESSION['error']) { ?>
+                            <div class="alert alert-warning alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['error']; ?>
+                            </div>
+                        <?php } ?>
+
+                        <?php if($_SESSION['success']) { ?>
+                            <div class="alert alert-success alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['success']; ?>
+                            </div>
+                        <?php } ?>
+
+                        <?php if($_SESSION['update']) { ?>
+                            <div class="alert alert-success alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['update']; ?>
+                                </div>
+                        <?php } ?>
+
+                        <?php if($_SESSION['delete']) { ?>
+                            <div class="alert alert-danger alert-dismissable">
+                                <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                                    <?php echo $_SESSION['delete']; ?>
+                            </div>
+                        <?php } ?>
+
                             <!-- <form method="POST"> -->
                             <?php echo form_open('Attendance/addAttendance'); ?>
 

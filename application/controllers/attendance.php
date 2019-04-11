@@ -10,7 +10,6 @@ class Attendance extends Admin_Controller
 		parent::__construct();
 		
 	}
-		
 	
 	public function view_attendance()
 		{
@@ -33,10 +32,14 @@ class Attendance extends Admin_Controller
 		
 				if($this->form_validation->run()==FALSE)
 						{		
+							$this->session->set_flashdata('error', 'Fill all the fields with valid data');
+
 							$this->view_attendance();
 						}
 				else
 						{
+							$this->session->set_flashdata('success', 'Attendance marked successfully');
+
 							$this->load->model('Model_attendance');				
 							$this->Model_attendance->addAttendance();
 							redirect(base_url() . "Attendance/view_attendance");	
@@ -47,6 +50,8 @@ class Attendance extends Admin_Controller
 		//delete function
 	public function deleteAttendance($id)
 	{
+		$this->session->set_flashdata('delete', 'Record deleted successfully');
+
 		$this->load->model('Model_attendance');
 		$this->Model_attendance->deleteAttendance($id);
 		redirect(base_url() . "Attendance/view_attendance");
@@ -68,6 +73,8 @@ class Attendance extends Admin_Controller
 	//update edited data
 	public function updateAttendance()
 	{
+		$this->session->set_flashdata('update', 'Record updated successfully');
+
 		$this->load->model('Model_attendance');
 		$this->Model_attendance->updateAttendance();
 		redirect(base_url() . "Attendance/view_attendance");

@@ -29,6 +29,8 @@ class Stock extends Admin_Controller
         //delete function
         public function deleteMainStock($id)
         {
+            $this->session->set_flashdata('delete', 'Record deleted successfully');
+
             $this->load->model('Model_main_stock');
             $this->Model_main_stock->deleteMainStock($id);
             redirect(base_url() . "Stock/view_main_stock");
