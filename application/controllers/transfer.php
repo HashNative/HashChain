@@ -29,7 +29,7 @@ class Transfer extends Admin_Controller
 				$this->form_validation->set_rules("Barcode", "Valid Barcode", 'required');
 				$this->form_validation->set_rules("unitCost", "Select Unit Cost", 'required');
 				$this->form_validation->set_rules("sections", "Select proper section", 'required');
-				$this->form_validation->set_rules("quantity", "Quantity", 'required');
+				$this->form_validation->set_rules("quantity", "Quantity", 'callback_quantity_check');
 				$this->form_validation->set_rules("cost", "Cost", 'required');
 
 				if($this->form_validation->run()==FALSE)
@@ -49,6 +49,20 @@ class Transfer extends Admin_Controller
 							$this->transfer();
 						}
 		}
+
+		//quantity validation
+		public function quantity_check($str)
+        {
+                if ($str == '')
+                {
+                        $this->form_validation->set_message('quantity_check', 'The Quantity field required to be filled');
+                        return FALSE;
+                }
+                else
+                {
+                        return TRUE;
+                }
+        }
 
 	//delete function
 

@@ -59,6 +59,13 @@
     <!-- Text spinners style -->
     <link href="<?php echo base_url('assets/css/plugins/textSpinners/spinners.css'); ?>" rel="stylesheet">
 
+    <!-- footable links -->
+        <link rel="stylesheet" href="css/footable.core.css">
+        <link rel="stylesheet" href="css/footable.metro.css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/footable.js"></script>
+        <script src="js/footable.filter.js"></script>
+
     <link href="<?php echo base_url('assets/css/animate.css');?>" rel="stylesheet">
     <link href="<?php echo base_url('assets/css/style.css');?>" rel="stylesheet">
 
@@ -119,7 +126,7 @@
                         <i class="fa fa-home"></i> <span class="nav-label">View Main Stock</span></a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="<?php echo base_url('FinalGoods/final_good'); ?>">
                         <i class="fa fa-shopping-cart"></i> <span class="nav-label">Final Goods</span></a>
                 </li>
             </ul>

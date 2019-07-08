@@ -110,9 +110,9 @@
                                                     <input type="number" class="form-control" value="0" name="quantity">
                                                         <div class="input-group-append">
                                                             <span class="input-group-addon">units</span>
-                                                        </div>
-                                                        
+                                                        </div>                                                        
                                                 </div>
+                                                <span class="text-danger"><?php echo form_error("quantity"); ?></span>
                                             </div>
                                     </div>
                                     <div class="form-group row">
@@ -171,12 +171,31 @@
                                                 <td>
 
                                                     <a href='<?php echo base_url(); ?>Transfer/editTransfer/<?php echo $transferData['id']; ?>'  
-                                                    class='btn btn-primary btn-md' type='submit'  onClick="return doconfirm1();">
+                                                    class='btn btn-primary btn-md' type='submit's>
                                                     Update</a>
                                                     
-                                                    <a href='<?php echo base_url(); ?>Transfer/deleteTransfer/<?php echo $transferData['id']; ?>'  
-                                                    class='btn btn-danger btn-md' type='submit'  onClick="return doconfirm();">
-                                                    Delete</a>
+                                                    <button class='btn btn-danger btn-md' type='submit' data-toggle="modal" data-target="#myModal">
+                                                    Delete</button>
+
+                                                      <!-- Modal -->
+                                                        <div class="modal fade" id="myModal" role="dialog">
+                                                            <div class="modal-dialog modal-md">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h4 class="modal-title">Delete Confirmation !</h4>
+                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <p>Are you sure to delete the record permanently?</p>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <a href='<?php echo base_url(); ?>Transfer/deleteTransfer/<?php echo $transferData['id']; ?>'  type="submit" class="btn btn-default">OK</a>
+                                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                 </td>
                                             </tr>
 
@@ -196,7 +215,7 @@
 
 
 <!-- dialog box confirmation for delete record -->
-<script>
+<!-- <script>
     function doconfirm()
     {
         job=confirm("Are you sure to delete the record permanently?");
@@ -205,21 +224,4 @@
             return false;
         }
     }
-
-    function doconfirm1()
-    {
-        job=confirm("Do you want to update the record?");
-        if(job!=true)
-        {
-            return false;
-        }
-    }
-
-    function alert()
-    {
-        if(form_validation() == FALSE){
-            alert('Submit button pressed');
-        }
-    }
-
-</script>
+</script> -->

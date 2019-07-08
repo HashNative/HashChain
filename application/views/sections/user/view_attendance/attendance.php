@@ -115,6 +115,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                    
                                         <?php foreach ($attendance as $attendances){ ?>
                                             
                                             <tr>
@@ -125,12 +126,31 @@
                                                 <td>
 
                                                     <a href='<?php echo base_url(); ?>Attendance/editAttendance/<?php echo $attendances['id']; ?>'  
-                                                    class='btn btn-primary btn-md' type='submit'  onClick="return doconfirm1();">
+                                                    class='btn btn-primary btn-md' type='submit'>
                                                     Update</a>
                                                     
-                                                    <a href='<?php echo base_url(); ?>Attendance/deleteAttendance/<?php echo $attendances['id']; ?>'  
-                                                    class='btn btn-danger btn-md' type='submit'  onClick="return doconfirm();">
-                                                    Delete</a>
+                                                    <button data-toggle="modal" data-target="#myModal" class='btn btn-danger btn-md' type='submit'>Delete</button>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="myModal" role="dialog">
+                                                        <div class="modal-dialog modal-md">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h4 class="modal-title">Delete Confirmation !</h4>
+                                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <p>Are you sure to delete the record permanently?</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <a href='<?php echo base_url(); ?>Attendance/deleteAttendance/
+                                                                    <?php echo $attendances['id']; ?>'  type="submit" class="btn btn-default">OK</a>
+                                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </td>
                                             </tr>
 
@@ -150,7 +170,7 @@
 </div>
 
 <!-- dialog box confirmation for delete record -->
-<script>
+<!-- <script>
     function doconfirm()
     {
         job=confirm("Are you sure to delete the record permanently?");
@@ -159,13 +179,4 @@
             return false;
         }
     }
-
-    function doconfirm1()
-    {
-        job=confirm("Do you want to update the record?");
-        if(job!=true)
-        {
-            return false;
-        }
-    }
-</script>
+</script> -->

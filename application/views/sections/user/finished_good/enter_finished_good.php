@@ -21,17 +21,20 @@
                             </div>
                         </div>
 
-                        <div class="ibox-content">
+                            
+                            <!-- <form method="POST"> -->
+                           <?php echo form_open('Goods/finished_good'); ?>
 
-                            <div class="col text-right">
-                                <?php 
-                                     echo "Date : " . date("Y-m-d") . "<br>"; 
-                                ?>
-                            </div>
+                                    <div class="form-group row" id="data_1">
+                                        <label class="col-sm-2 col-form-label">Date</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group date">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                <input type="text" class="form-control" value="<?php echo date("d/m/Y"); ?>" name="date">
+                                            </div>
+                                        </div>
+                                    </div>
 
-                            <br>
-
-                            <form method="POST">
                                     <div class="form-group row">
                                         <label class="col-lg-2 col-form-label">Stock Target :</label> 
                                             <div class="col-lg-10">
@@ -128,22 +131,20 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                            foreach ($finished_good as $finishedGood){
-                                                echo"
+                                            foreach ($finished_good as $finishedGood){ ?>
                                                     <tr>
-                                                        <td> {$finishedGood['Stock_target']}</td>
-                                                        <td> {$finishedGood['Barcode']}</td>
-                                                        <td> {$finishedGood['Quantity']}</td>
-                                                        <td> {$finishedGood['Unit_Price']}</td>
-                                                        <td> {$finishedGood['Total']}</td>
+                                                        <td><?php echo $finishedGood['Stock_target']; ?></td>
+                                                        <td><?php echo $finishedGood['Barcode']; ?></td>
+                                                        <td><?php echo $finishedGood['Quantity']; ?></td>
+                                                        <td><?php echo $finishedGood['Unit_Price']; ?></td>
+                                                        <td><?php echo $finishedGood['Total']; ?></td>
                                                         
                                                         <td>
                                                             <button class='btn btn-primary btn-md' type='submit' class='text-center'>Update</button>
                                                             <button class='btn btn-danger btn-md' type='reset'>Delete</button>
                                                         </td>
-                                                    </tr>";
-                                            }
-                                        ?>
+                                                    </tr>
+                                         <?php   } ?>
                                     </tbody>
                                 </table>         
                             </div>

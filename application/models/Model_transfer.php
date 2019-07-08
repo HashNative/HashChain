@@ -62,5 +62,4 @@ class Model_transfer extends CI_Model
         } 
 
 }
-
 ?>
